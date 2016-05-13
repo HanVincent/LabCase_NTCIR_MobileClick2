@@ -1,0 +1,6 @@
+1.取得no_smoothing_infreq分數
+2.用_w2v取得100d，並將iunits - query得到101d
+3.將101d丟到_SVRform切割成五等分
+4.將切割完的檔案丟到_libsvm/window，並且跑run.bat
+5.result即為預測結果，ans為正確解答
+6.將result丟到excel弄成上傳格式
