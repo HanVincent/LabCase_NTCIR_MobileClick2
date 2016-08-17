@@ -1,7 +1,10 @@
 # LabCase_NTCIR_MobileClick2
-My Lab Case is participation in the MobileClick2 contest held by NTCIR.
-The goal of iUnits Ranking Subtask is to rank the given iUnits by the relevance to its query.
 
+### Introduction
+My Lab Case is participation in the MobileClick2 contest held by NTCIR.
+We developed two different approaches to the MobileClick task. In the first approach, we add some extra processing to the baseline. The second approach is based on machine learning, which is very different from the first. Our system achieves an nDCG@3 score of 0.7415, nDCG@5 score of 0.764, nDCG@10 score of 0.8059, nDCG@20 score of 0.8732 and a Q-measure score of 0.9004, outperforming the baseline a little bit.
+
+### Method
 We categorized our methods into two kinds: Improved-Baseling and Machine Learning.
 
   1. Improved-Baseline:
