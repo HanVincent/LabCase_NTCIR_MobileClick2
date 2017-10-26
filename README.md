@@ -1,7 +1,9 @@
-# LabCase_NTCIR_MobileClick2
+
+
+# Lab Case - NTCIR MobileClick2
+For my lab case, I participated in the MobileClick2 contest held by NTCIR, Japan.
 
 ### Introduction
-My Lab Case is participation in the MobileClick2 contest held by NTCIR.
 We developed two different approaches to the MobileClick task. In the first approach, we add some extra processing to the baseline. The second approach is based on machine learning, which is very different from the first. Our system achieves an nDCG@3 score of 0.7415, nDCG@5 score of 0.764, nDCG@10 score of 0.8059, nDCG@20 score of 0.8732 and a Q-measure score of 0.9004, outperforming the baseline a little bit.
 
 ### Method
@@ -26,10 +28,10 @@ We categorized our methods into two kinds: Improved-Baseling and Machine Learnin
   2. Machine Learning:
      Predict the answer through the relation between query and iUnits with the tool Liblinear-SVM and the 100-dimension Word2Vec dictionary pre-trained by Wikipedia 2014 corpus and English Gigaword fifth edition corpus. Each word has its 100-value vector, and closer the distance between two words, more frequently they appear together.
 
-    2.1	Pointwise
+    2.1 Pointwise
 	      Taking the ground truth of training data as label, we set 101 values as features composed of the 100-dimension vector and the score from the Improved-Baseline method. We evaluated our model with 5-fold.
 	      
-     2.2 Pairwise
+    2.2 Pairwise
 	       Considering the relation between iUnits, we divide labels into three kinds: 0(larger), 1(equal), and 2(smaller). There are 201 features for each instance, vector of iUnit A - Q and iUnit B - Q. The last one is the score of iUnit A minus that of iUnit B gained from Improved-Baseline.
 
 ### Conclusion
